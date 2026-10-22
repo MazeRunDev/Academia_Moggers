@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro - Mogger's Fit</title>
+</head>
+<body>
+    <!-- essa página não tem menu, só o logo mesmo -->
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Mogger's Fit</a>
+    </header>
+
+    <main>
+        <section class="secao">
+            <div class="titulo-secao">
+                <h1>Bora começar?</h1>
+                <p>Preenche seus dados e escolhe um plano. A primeira vez é sempre a mais difícil, depois vicia.</p>
+            </div>
+
+            <!-- formulário de registro (mesmo estilo do formulário de contato)
+                 os campos são os mesmos da tabela Aluno do banco de dados.
+                 quando envia, volta pra página inicial -->
+            <form class="formulario caixa-registro" action="index.html">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <!-- cpf e data de nascimento lado a lado -->
+                <div class="campo-duplo">
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                    </div>
+                    <div class="campo">
+                        <label for="data-nascimento">Data de nascimento</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+                </div>
+                <!-- telefone e e-mail lado a lado -->
+                <div class="campo-duplo">
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+                <!-- senha e confirmar senha ficam lado a lado -->
+                <div class="campo-duplo">
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                    </div>
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita a senha" minlength="8" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="plano">Plano</label>
+                    <select id="plano" name="plano" required>
+                        <option value="">Selecione um plano</option>
+                        <option value="basico">Básico - R$ 89,90/mês</option>
+                        <option value="plus">Plus - R$ 129,90/mês</option>
+                        <option value="mogger">Mogger - R$ 179,90/mês</option>
+                    </select>
+                </div>
+                <div class="campo-check">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os termos de uso (e prometo limpar o aparelho depois de usar)</label>
+                </div>
+                <button type="submit" class="botao">Criar conta</button>
+                <p class="link-voltar">Ainda tá na dúvida? <a href="planos.html">Dá mais uma olhada nos planos</a></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- rodapé, igual em toda página -->
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="rodape-marca">
+                <span class="logo">Mogger's Fit</span>
+                <p>Aqui você entra mole e sai firme. Aberto todo dia, toda hora, porque vontade não tem horário.</p>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="register.html">Registre-se</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Rua das Academias, 123 - Centro</li>
+                    <li>(11) 69696-9669</li>
+                    <li>contato@moggersfit.com.br</li>
+                </ul>
+            </div>
+            <!-- redes sociais (perfis inventados, os links não levam pra lugar nenhum) -->
+            <div class="rodape-coluna">
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li><a href="#">Instagram: @moggersfit</a></li>
+                    <li><a href="#">TikTok: @moggersfit.oficial</a></li>
+                    <li><a href="#">YouTube: Mogger's Fit TV</a></li>
+                    <li><a href="#">WhatsApp: (11) 69696-9669</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape-baixo">
+            <span>&copy; 2026 Mogger's Fit. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+</body>
+</html>

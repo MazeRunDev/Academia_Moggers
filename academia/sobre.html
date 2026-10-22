@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre - Mogger's Fit</title>
+</head>
+<body>
+    <!-- cabeçalho com logo e menu, é igual em toda página -->
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Mogger's Fit</a>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html" class="ativo">Sobre</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="register.html" class="botao-destaque">Registre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- texto de apresentação da academia -->
+        <div class="linha-cheia">
+            <div class="coluna-texto">
+                <h1>Sobre a Mogger's Fit</h1>
+                <p>Nascemos pra quem não tem medo de pegar pesado: equipamentos modernos, instrutores que sabem exatamente onde colocar a mão (pra corrigir sua postura, calma) e um ambiente onde ninguém sai do mesmo jeito que entrou.</p>
+            </div>
+            <div class="coluna-imagem">
+                <img src="img/esteira.jpg" alt="Área de esteiras da academia">
+            </div>
+        </div>
+
+        <!-- segundo bloco, invertido (imagem do lado esquerdo) -->
+        <div class="linha-cheia invertida">
+            <div class="coluna-texto">
+                <p>Nossa equipe fica sempre por perto pra subir sua carga, ajustar a posição e dar aquela forcinha nas últimas repetições. Aqui ninguém fica na mão.</p>
+            </div>
+            <div class="coluna-imagem">
+                <img src="img/maromba.jpg" alt="Área de musculação da academia">
+            </div>
+        </div>
+
+        <!-- modelagem do banco de dados usado no trabalho de escola -->
+        <section class="secao">
+            <div class="titulo-secao">
+                <h2>Modelagem do banco de dados</h2>
+                <p>Estrutura de dados usada para organizar alunos, treinos, planos e pagamentos.</p>
+            </div>
+            <div class="grade-diagramas">
+                <!--
+                    Cada diagrama tem:
+                    1) um checkbox escondido (guarda se o popup tá aberto)
+                    2) o ".diagrama-corpo", que é a miniatura + legenda
+                       (é ele que "levanta" no hover, não a div de fora,
+                       senão o popup quebra - motivo explicado no CSS)
+                    3) o popup em si, que só aparece quando marca o checkbox
+                -->
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-conceitual" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-conceitual" class="abrir-diagrama">
+                            <img src="img/mer-der/conceitual.png" alt="Modelo conceitual do banco de dados">
+                        </label>
+                        <span>Modelo conceitual</span>
+                    </div>
+                    <label for="popup-conceitual" class="popup-imagem">
+                        <img src="img/mer-der/conceitual.png" alt="Modelo conceitual do banco de dados ampliado">
+                    </label>
+                </div>
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-logico" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-logico" class="abrir-diagrama">
+                            <img src="img/mer-der/logico.png" alt="Modelo lógico do banco de dados">
+                        </label>
+                        <span>Modelo lógico</span>
+                    </div>
+                    <label for="popup-logico" class="popup-imagem">
+                        <img src="img/mer-der/logico.png" alt="Modelo lógico do banco de dados ampliado">
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- fluxograma mostrando como as páginas se conectam -->
+        <section class="secao">
+            <div class="titulo-secao">
+                <h2>Fluxograma do site</h2>
+                <p>Como as páginas do site se conectam.</p>
+            </div>
+            <div class="grade-fluxo">
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-flux-01" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-flux-01" class="abrir-diagrama">
+                            <img src="img/fluxograma/01.png" alt="Fluxograma da página Home">
+                        </label>
+                        <span>Home</span>
+                    </div>
+                    <label for="popup-flux-01" class="popup-imagem">
+                        <img src="img/fluxograma/01.png" alt="Fluxograma da página Home ampliado">
+                    </label>
+                </div>
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-flux-02" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-flux-02" class="abrir-diagrama">
+                            <img src="img/fluxograma/02.png" alt="Fluxograma da página Sobre">
+                        </label>
+                        <span>Sobre</span>
+                    </div>
+                    <label for="popup-flux-02" class="popup-imagem">
+                        <img src="img/fluxograma/02.png" alt="Fluxograma da página Sobre ampliado">
+                    </label>
+                </div>
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-flux-03" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-flux-03" class="abrir-diagrama">
+                            <img src="img/fluxograma/03.png" alt="Fluxograma da página Planos">
+                        </label>
+                        <span>Planos</span>
+                    </div>
+                    <label for="popup-flux-03" class="popup-imagem">
+                        <img src="img/fluxograma/03.png" alt="Fluxograma da página Planos ampliado">
+                    </label>
+                </div>
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-flux-04" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-flux-04" class="abrir-diagrama">
+                            <img src="img/fluxograma/04.png" alt="Fluxograma da página Contato">
+                        </label>
+                        <span>Contato</span>
+                    </div>
+                    <label for="popup-flux-04" class="popup-imagem">
+                        <img src="img/fluxograma/04.png" alt="Fluxograma da página Contato ampliado">
+                    </label>
+                </div>
+                <div class="diagrama">
+                    <input type="checkbox" id="popup-flux-05" class="checkbox-popup">
+                    <div class="diagrama-corpo">
+                        <label for="popup-flux-05" class="abrir-diagrama">
+                            <img src="img/fluxograma/05.png" alt="Fluxograma da página Registre-se">
+                        </label>
+                        <span>Registre-se</span>
+                    </div>
+                    <label for="popup-flux-05" class="popup-imagem">
+                        <img src="img/fluxograma/05.png" alt="Fluxograma da página Registre-se ampliado">
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- rodapé, igual em toda página -->
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="rodape-marca">
+                <span class="logo">Mogger's Fit</span>
+                <p>Aqui você entra mole e sai firme. Aberto todo dia, toda hora, porque vontade não tem horário.</p>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="register.html">Registre-se</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Rua das Academias, 123 - Centro</li>
+                    <li>(11) 69696-9669</li>
+                    <li>contato@moggersfit.com.br</li>
+                </ul>
+            </div>
+            <!-- redes sociais (perfis inventados, os links não levam pra lugar nenhum) -->
+            <div class="rodape-coluna">
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li><a href="#">Instagram: @moggersfit</a></li>
+                    <li><a href="#">TikTok: @moggersfit.oficial</a></li>
+                    <li><a href="#">YouTube: Mogger's Fit TV</a></li>
+                    <li><a href="#">WhatsApp: (11) 69696-9669</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape-baixo">
+            <span>&copy; 2026 Mogger's Fit. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+</body>
+</html>
